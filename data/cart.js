@@ -34,5 +34,5 @@ export function removeFromCart(productId){
     }
   });
   
-  cart=newCart;
+  return cart=newCart;
 }
