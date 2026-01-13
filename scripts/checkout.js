@@ -3,6 +3,8 @@ import {products} from '../data/products.js';
 import {formatCurrency} from './utils/money.js';
 
 let cartSummaryHTML='';
+
+// Gets item details, stores them in the cart array, and generates HTML
 cart.forEach((cartItem) => {
   const productId=cartItem.productId;
   let matchingProduct;
