@@ -117,7 +117,7 @@ export function renderOrderSummary(){
     const container = document.querySelector(`.js-cart-item-container-${productId}`);
 
     container.remove();
-    // updatecartQuantity();
+    updatecartQuantity();
     renderPaymentSummary();
     
     })
@@ -134,13 +134,13 @@ export function renderOrderSummary(){
 }
  
 
-// function updatecartQuantity(){
-//   let cartQuantity=0;
+export function updatecartQuantity(){
+  let cartQuantity=0;
 
-//     cart.forEach((item) => {
-//       cartQuantity+=item.quantity;
-//     })
+    cart.forEach((item) => {
+      cartQuantity+=item.quantity;
+    })
 
-//     document.querySelector('.js-return-to-home-link').innerHTML=cartQuantity;
-// }
+    document.querySelector('.js-return-to-home-link').innerHTML=cartQuantity;
+}
 
